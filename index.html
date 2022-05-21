@@ -1,56 +1,160 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+<title>Marina Rachid's website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
 <style>
-body {
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
-</head>
 <body>
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#research">Research</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-sidebarcolor w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-burlywood">Home</a> 
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-burlywood">Research</a> 
+    <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-burlywood">Publications</a>
+    <a href="#CV" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-burlywood">Curriculum</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-sburlywood">Contact</a>
+  </div>
+</nav>
 
-<div style="margin-left:25%;padding:1px 16px;height:1000px;">
-  <h2>In construction</h2>
-  <h3></h3>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+  <span>CBLA</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:350px;margin-right:50px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="home">
+    <h1 class="w3-xxxlarge w3-text-teal"><center><b>Hello and welcome to my website!</b></h1></center>
+        <center><p>I am Marina Gomes Rachid, Ph.D. candidate at the Laboratory for Astrophysics at the Leiden Observatory, in the Netherlands. The main topics of my research are the charactherization and detection of molecules in interstellar ices and the the UV-vis optical properties of ices.</p></center>
+    <h1 class="w4-jumbo w3-text-teal"><b></b></h1>
+  <img src="karnetal.jpeg" alt="Trulli"  height="370"class="center">
+  </div>
+
   
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+      <!-- Research -->
+  <div class="w3-container" id="research" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Research</b></h1>
+    <hr style="width:100px;border:3px solid teal" class="w3-round">
+    
+    
+    <p>During my Ph.D., I am working on the charactherization of complex organic species in astrophysical relevant ices. These data will be of essential important for the identification of these species on the JWST spectra of ices. For an overview of the species that have been detected and developed tools for hte usage of this data see the <a href="https://icedb.strw.leidenuniv.nl/">Leiden Ice Database for Astrochemistry- LIDA</a> and check out our upcoming publication (Rocha, Rachid et al., submitted)</p>
+
+  </div>
+  
+
+
+  <!-- Publications -->
+  <div class="w3-container" id="publications" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Publications</b></h1>
+    <hr style="width:100px;border:3px solid teal" class="w3-round">
+
+
+
+
+<a href=""></a>
+
+<p>
+<a href="https://arxiv.org/abs/2112.01887">He, J., Diamant, S. J., Wang, S., Yu, H., Rocha, W. R., Rachid, M., & Linnartz, H. (2022). Refractive Index and Extinction Coefficient of Vapor-deposited Water Ice in the UV–vis Range. The Astrophysical Journal, 925(2), 179.</a></p>
+
+<p><a href="https://www.aanda.org/articles/aa/abs/2021/09/aa40782-21/aa40782-21.html">Rachid, M. G., Brunken, N., De Boe, D., Fedoseev, G., Boogert, A. C. A., & Linnartz, H. (2021). Infrared spectra of complex organic molecules in astronomically relevant ice mixtures-IV. Methylamine. Astronomy & Astrophysics, 653, A116.</a></p>
+
+<p><a href="https://www.aanda.org/articles/aa/abs/2020/07/aa37497-20/aa37497-20.html">Rachid, M. G., van Scheltinga, J. T., Koletzki, D., & Linnartz, H. (2020). Infrared spectra of complex organic molecules in astronomically relevant ice mixtures-II. Acetone. Astronomy & Astrophysics, 639, A4.</a></p>
+
+<p><a href="https://arxiv.org/abs/1902.03090">Candian, A., Gomes Rachid, M., MacIsaac, H., Staroverov, V. N., Peeters, E., & Cami, J. (2019). Searching for stable fullerenes in space with computational chemistry. Monthly Notices of the Royal Astronomical Society, 485(1), 1137-1146.</a></p>
+
+
+<p><a href="https://academic.oup.com/mnras/article-abstract/494/2/2396/5823190">Rachid, M. G., Pilling, S., Rocha, W. R. M., Agnihotri, A., Rothard, H., & Boduch, P. (2020). Processing of 72-K water-rich ices by keV and MeV oxygen ions: implications for the Saturnian moon Enceladus. Monthly Notices of the Royal Astronomical Society, 494(2), 2396-2409.</a></p>
+
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0032063316304391?casa_token=D01NapsIJ9EAAAAA:0g7nqzsQ1trLN8LTbYzwQWOs2Cb3yEdlaVn16oAWOjqvmQ5PZr4S9cHsjl3tkPBF5kOq96ZDWg">Rachid, M. G., Faquine, K., & Pilling, S. (2017). Destruction of C2H4O2 isomers in ice-phase by X-rays: Implication on the abundance of acetic acid and methyl formate in the interstellar medium. Planetary and Space Science, 149, 83-93. </a></p>
+
+
+<p><a href="https://pubs.acs.org/doi/abs/10.1021/jp406992q">Terrabuio, L. A., Teodoro, T. Q., Rachid, M. G., & Haiduke, R. L. (2013). Systematic theoretical study of non-nuclear electron density maxima in some diatomic molecules. The Journal of Physical Chemistry A, 117(40), 10489-10496.</a> </p>
+  </div>
+
+
+      <!-- CV -->
+  <div class="w3-container" id="CV" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Academic Curriculum</b></h1>
+    <hr style="width:100px;border:3px solid teal" class="w3-round">  
+       <p> For my complete Academic CV <a href="CO_ice_transparency-3.pdf">click here</a> . </p>
+
+  </div>
+
+
+
+
+
+<div class="w3-container" id="contact" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-teal"><b>Contact</b></h1>
+  <hr style="width:100px;border:3px solid teal" class="w3-round">
+
+
+<p> rachid (at) strw.leidenuniv.nl </p>
+<p> marina.g.rachid (at) gmail.com </p>
+
+<p> Find my profile also at: </p>
+      
+         
+<a href="https://nl.linkedin.com/in/marina-gomes-rachid-b5b268215">
+<img alt="LinkedIn" src=linkedin.png width=50"><a href="https://nl.linkedin.com/in/marina-gomes-rachid-b5b268215">
+
+<a href="https://orcid.org/0000-0001-5874-1838">         
+<img alt="ORCID" src=orcid.png width=50"><a href="https://orcid.org/0000-0001-5874-1838">         
+
+<a href="https://www.researchgate.net/profile/Marina-Gomes-Rachid">         
+<img alt="Research Gate" src=research_gate.png width=50"><a href="https://www.researchgate.net/profile/Marina-Gomes-Rachid">         
+         
+<a href="https://scholar.google.com/citations?user=plsF5vkAAAAJ&hl=pt-BR&oi=sra">                  
+<img alt="Google Scholar" src=scholar.png width=50"><a href="https://scholar.google.com/citations?user=plsF5vkAAAAJ&hl=pt-BR&oi=sra">         
+
+
+
+
+
+
+<!-- End page content -->
 </div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:15px;padding-right:18px"><p class="w3-right"></p></div>
+	
+
 
 </body>
 </html>
-
 
