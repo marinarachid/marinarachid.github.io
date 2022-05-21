@@ -1,6 +1,6 @@
-/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+/* W3.CSS 4.15 December 2020 by J Egil and B Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* Extract from normalize.css by N Gallagher and J Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
@@ -182,13 +182,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 
-.w3-lime,.w3-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
-.w3-orange,.w3-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
-.w3-deep-orange,.w3-hover-deep-orange:hover{color:#fff!important;background-color:#ffz2!important}
-.w3-pink,.w3-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
-.w3-purple,.w3-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
-.w3-deep-purple,.w3-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
-.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
 .w3-sand,.w3-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
 .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#9BCDD3!important}
 .w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
